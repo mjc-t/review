@@ -1,0 +1,121 @@
+표준 출력
+>: 새로 저장 = 1>
+>>: 추가
+
+표준 오류
+2>
+
+/dev/null
+- 버리고 싶은 내용을 담는 장치 파일
+- 이 파일에 전달된 모든 내용은 시스템에서 사라지고 복구할 수 없다.
+
+오류 메시지 버리기
+오류가 발생하는 명령어 2> /dev/null
+
+표준 출력과 표준 오류를 한 파일로 리다이렉션하기
+- 명령 > 파일명 2>&1
+
+입력 리다이렉션
+<
+명령어 파일명=명령어 < 파일명
+<<
+리눅스에서 메일에 파일 첨부 시에 사용
+===
+알리아스
+alias 이름='명령어'
+alias
+alias lll='ls -al'
+alias pnd='pwd; date'
+
+알리아스 해제
+unalias 이름
+
+히스토리
+history
+!!
+!번호
+!문자열
+
+히스토리 저장 파일: ~/.bash_history
+
+부트로더
+- LILO
+- GRUB
+
+passwd: 자신의 암호 변경
+루트 계정 암호 지정
+sudo passwd root
+
+systemctl get-default
+systemctl set-default ...
+
+sudo systemctl set-default multi-user.target
+sudo systemctl set-default graphical.target
+
+리눅스 종료=셧다운
+shutdown -h
+init 0
+halt -p
+poweroff
+
+리눅스 재부팅
+shutdown -r
+init 6
+reboot
+===
+shutdown -h now
+shutdown -h
+shutdown -c
+shutdown -h 10
+shutdown -h 10:00
+shutdown -h 22:00 "is to shutdown at 22:00"
+
+Window: Service = Linux: Daemon
+
+리눅스 패키지 = 윈도우의 프로그램
+레드햇 계열: .rpm
+데비안 계열: .deb
+
+패키지 저장소 정보:  /etc/apt/sources.list
+
+우분투 패키지 설치 명령어
+- apt = apt-get
+- dpkg
+- aptitude
+
+apt update
+apt install 패키지명
+예) sudo apt install cowsay
+apt remove 패키지명
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
