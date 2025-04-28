@@ -1,0 +1,15 @@
+1. 다음 경로에서 vmware 17.6.2 버전 다운로드 후 설치: P14 - 16
+https://cafe.naver.com/f-e/cafes/27895721/articles/7873?menuid=1&referrerAllArticles=false
+
+2. VMnet8의 IP 주소 변경(P49 - 51)
+
+3. D 드라이브에 폴더 생성
+   D:\Rocky9
+   추가적으로 그 밑에 server 생성
+   D:\Rocky9\server
+
+4. Rocky Linux 설치(P77 2-0부터 - 84)
+   3-5에서 추가적으로 파티션 생성해야 됨
+	/boot/efi: 4G
+   일반 사용자도 추가: lima(암호: password)
+   
